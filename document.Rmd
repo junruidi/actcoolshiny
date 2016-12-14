@@ -1,0 +1,25 @@
+---
+title: "Document For actcool app"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##1. Targeted Users
+This app is a handy exploratory tool for researchers who want to use accelerometery data, to be more specific, minute level activity count data. We required the data to be stored in a $n \times (2+ 1440)$ matrix, where n is each subject-day, and the first two colums are ID and date, and the following 1440 minutes.
+User will be able to upload their data
+
+##2. Where is code
+Backend code is in the package "actcool" which can be downloaded by the follow line
+```{r,eval=FALSE}
+devtools::install_github("junruidi/actcool")
+```
+Code for the shiny app can be foud ...
+
+##3. Tutorial for the shiny app
+
+##4. Example data location
+The exmaple data is stored in the following github repository
+https://github.com/junruidi/actcooldata
