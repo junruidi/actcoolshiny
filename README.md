@@ -1,13 +1,4 @@
 # actcoolshiny
----
-title: "Document for ``actcool'' shiny app"
-output: pdf_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ##1. Targeted Users
 This app is a handy exploratory tool for researchers who want to use accelerometery data, to be more specific, minute level activity count data. We required the data to be stored in a $n \times (2+ 1440)$ matrix, where n is each subject-day, and the first two colums are ID and date, and the following are 1440 minutes.
 After users supply the data in the correct format, the app will create wear/nonwear flags, calculate activity summaries, and created daily profile plots. Meanwhile, users can choose to donate his/her own fitbit data to be part of the dataset. 
