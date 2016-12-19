@@ -70,7 +70,7 @@ shinyServer(function(input, output) {
     paste("Summary for Subject", input$ID, "on Day", input$Day)
   })
 # download
-  output$downloadflag <- downloadHandler(
+  output$downloadflagbutton <- downloadHandler(
     filename = function() {paste0('flag_data.csv') },
     content = function(con) { write.csv(flag.all(), con) }
   )
@@ -81,7 +81,7 @@ shinyServer(function(input, output) {
   # })
   
   # download summary all data
-  output$download.summary <- downloadHandler(
+  output$download.summary.button <- downloadHandler(
     filename = function() {paste0('Summary_data.csv') },
     content = function(con) {
       write.csv(accelsummary_data(data = Maindata$data , 
