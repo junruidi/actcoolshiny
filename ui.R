@@ -59,7 +59,6 @@ shinyUI(fluidPage(
                     tabPanel("Plot", value = 3, plotOutput("plot")),
                     tabPanel("Data Donation", value = 3, h4("Users can download fitbit data"),
                              bootstrapPage(
-                               h4("(For current version, this feature only works on local PC, please download it and run the app locally)"),
                                textInput("key", label = "Fitbit Key",value = "227YWF"),
                                textInput("secret", label = "Fitbit Secret",value = "aa07049ff79a741122ee92776039e5ce"),
                                textInput("date", label = "Date (e.g. 2016-11-21)",value = "2016-11-21"),

@@ -176,13 +176,21 @@ shinyServer(function(input, output) {
   observeEvent(input$uploadact,{
     write.csv(Maindata$data, "act_all.csv", row.names = FALSE)
     token = drop_auth(new_user = T)
-    drop_upload("act_all.csv")
+    # token <- drop_auth(new_user = T)
+    # saveRDS(token, "droptoken.rds")
+    # token <- readRDS("droptoken.rds")
+    # drop_acc(dtoken = token)
+    drop_upload("act_all.csv",dtoken = token)
   })
 
   observeEvent(input$uploadflag,{
     write.csv(flag.all(), "flag_all.csv", row.names = FALSE)
     token = drop_auth(new_user = T)
-    drop_upload("flag_all.csv")
+    # token <- drop_auth(new_user = T)
+    # saveRDS(token, "droptoken.rds")
+    # token <- readRDS("droptoken.rds")
+    # drop_acc(dtoken = token)
+    drop_upload("flag_all.csv",dtoken = token)
   })
   
   observeEvent(input$uploadsummary,{
@@ -191,7 +199,11 @@ shinyServer(function(input, output) {
                                 h=input$threshold), 
               "summary_all.csv", row.names = FALSE)
     token = drop_auth(new_user = T)
-    drop_upload("summary_all.csv")
+    # token <- drop_auth(new_user = T)
+    # saveRDS(token, "droptoken.rds")
+    # token <- readRDS("droptoken.rds")
+    # drop_acc(dtoken = token)
+    drop_upload("summary_all.csv",dtoken = token)
   })
   
 })
