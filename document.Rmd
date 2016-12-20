@@ -18,8 +18,10 @@ devtools::install_github("junruidi/actcool")
 ```
 Code for the shiny app can be found at 
 https://github.com/junruidi/actcoolshiny .
+
 The shiny app is also hoted at 
 https://jhubiostatistics.shinyapps.io/actcoolshiny/.
+
 Please notice that, due to the interactive functionality of dropbox and fitbit api (rdrop2 and fitbitr), these two api's cannot be ran directly from shynyapps.io. But from a local PC, it works well.
 
 ##3. Tutorial for the shiny app
