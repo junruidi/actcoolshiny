@@ -10,6 +10,9 @@ devtools::install_github("junruidi/actcool")
 ```
 Code for the shiny app can be found at 
 https://github.com/junruidi/actcoolshiny .
+The shiny app is also hoted at 
+https://jhubiostatistics.shinyapps.io/actcoolshiny/.
+Please notice that, due to the interactive functionality of dropbox and fitbit api (rdrop2 and fitbitr), these two api's cannot be ran directly from shynyapps.io. But from a local PC, it works well.
 
 ##3. Tutorial for the shiny app
 1. Upload the csv file of the minute level activity count data.
@@ -17,7 +20,8 @@ https://github.com/junruidi/actcoolshiny .
 3. By selecting subject ID and date, summaries can be seen, and the profile plot can be seen.
 4. Users can download all resulted datasets to local, or send them to the dropbox.
 5. By providing fitbit tokens, user can donate his/her fitbit record to be part of the activity count dataset.
+(Note: 4-5 don't work on the shiny.io. If you would like to use it ,please download the source code for the app and run it locally.)
 
 ##4. Example data location
 The exmaple data is stored in the following github repository
-https://github.com/junruidi/actcoolshiny .
+https://github.com/junruidi/actcoolshiny, with name "act.csv".
