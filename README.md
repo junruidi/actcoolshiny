@@ -4,13 +4,13 @@ This app is a handy exploratory tool for researchers who want to use acceleromet
 After users supply the data in the correct format, the app will create wear/nonwear flags, calculate activity summaries, and created daily profile plots. Meanwhile, users can choose to donate his/her own fitbit data to be part of the dataset. 
 
 ##2. Where is code
-Backend code is in the package "actcool" which can be downloaded by the follow line
+Backend code is in the package "actcool" which can be downloaded by the following line
 ```{r,eval=FALSE}
 devtools::install_github("junruidi/actcool")
 ```
 Code for the shiny app can be found at 
 https://github.com/junruidi/actcoolshiny .
-The shiny app is also hoted at 
+The shiny app is also hosted at 
 https://jhubiostatistics.shinyapps.io/actcoolshiny/.
 Please notice that, due to the interactive functionality of dropbox and fitbit api (rdrop2 and fitbitr), these two api's cannot be ran directly from shynyapps.io. But from a local PC, it works well.
 
